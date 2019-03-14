@@ -1,0 +1,1747 @@
+C:\Users\smotley\AppData\Local\Continuum\anaconda3\python.exe "C:\Users\smotley\AppData\Roaming\JetBrains\PyCharm 2017.3.2\helpers\pydev\pydevd.py" --cmd-line --multiproc --qt-support=auto --client 127.0.0.1 --port 64303 --file U:/Documents/PycharmProjects/GIS_Grib/GribToRaster.py
+pydev debugger: process 5640 is connecting
+
+Connected to pydev debugger (build 173.4127.16)
+Backend Qt5Agg is interactive backend. Turning interactive mode on.
+band_level 0-MSL 
+ band_variable PRMSL
+band_level 1-HYBL 
+ band_variable PRES
+band_level 1-HYBL 
+ band_variable CLWMR
+band_level 1-HYBL 
+ band_variable CICE
+band_level 1-HYBL 
+ band_variable RWMR
+band_level 1-HYBL 
+ band_variable SNMR
+band_level 1-HYBL 
+ band_variable REFD
+band_level 1-HYBL 
+ band_variable TCOND
+band_level 1-HYBL 
+ band_variable RIME
+band_level 1-HYBL 
+ band_variable HGT
+band_level 1-HYBL 
+ band_variable TMP
+band_level 1-HYBL 
+ band_variable RH
+band_level 1-HYBL 
+ band_variable SPFH
+band_level 1-HYBL 
+ band_variable UGRD
+band_level 1-HYBL 
+ band_variable VGRD
+band_level 1-HYBL 
+ band_variable VVEL
+band_level 1-HYBL 
+ band_variable TKE
+band_level 2-HYBL 
+ band_variable UGRD
+band_level 2-HYBL 
+ band_variable VGRD
+band_level 2-HYBL 
+ band_variable TKE
+band_level 0-EATM 
+ band_variable REFC
+band_level 0-EATM 
+ band_variable VERIL
+band_level 0-SFC 
+ band_variable VIS
+band_level 0-CTL 
+ band_variable VIS
+band_level 1-HYBL 
+ band_variable BMIXL
+band_level 0-RESERVED(220) 
+ band_variable HGT
+band_level 0-RESERVED(220) 
+ band_variable UGRD
+band_level 0-RESERVED(220) 
+ band_variable VGRD
+band_level 0-RESERVED(220) 
+ band_variable unknown
+band_level 0-SFC 
+ band_variable GUST
+band_level 0-EATM 
+ band_variable RETOP
+band_level 1000-ISBL 
+ band_variable HGT
+band_level 1000-ISBL 
+ band_variable TMP
+band_level 1000-ISBL 
+ band_variable RH
+band_level 1000-ISBL 
+ band_variable SPFH
+band_level 1000-ISBL 
+ band_variable VVEL
+band_level 1000-ISBL 
+ band_variable DZDT
+band_level 1000-ISBL 
+ band_variable UGRD
+band_level 1000-ISBL 
+ band_variable VGRD
+band_level 2000-ISBL 
+ band_variable HGT
+band_level 2000-ISBL 
+ band_variable TMP
+band_level 2000-ISBL 
+ band_variable RH
+band_level 2000-ISBL 
+ band_variable SPFH
+band_level 2000-ISBL 
+ band_variable VVEL
+band_level 2000-ISBL 
+ band_variable DZDT
+band_level 2000-ISBL 
+ band_variable UGRD
+band_level 2000-ISBL 
+ band_variable VGRD
+band_level 3000-ISBL 
+ band_variable HGT
+band_level 3000-ISBL 
+ band_variable TMP
+band_level 3000-ISBL 
+ band_variable RH
+band_level 3000-ISBL 
+ band_variable SPFH
+band_level 3000-ISBL 
+ band_variable VVEL
+band_level 3000-ISBL 
+ band_variable DZDT
+band_level 3000-ISBL 
+ band_variable UGRD
+band_level 3000-ISBL 
+ band_variable VGRD
+band_level 3000-ISBL 
+ band_variable TKE
+band_level 3000-ISBL 
+ band_variable CLWMR
+band_level 3000-ISBL 
+ band_variable CICE
+band_level 3000-ISBL 
+ band_variable RWMR
+band_level 3000-ISBL 
+ band_variable SNMR
+band_level 3000-ISBL 
+ band_variable RIME
+band_level 5000-ISBL 
+ band_variable HGT
+band_level 5000-ISBL 
+ band_variable TMP
+band_level 5000-ISBL 
+ band_variable RH
+band_level 5000-ISBL 
+ band_variable SPFH
+band_level 5000-ISBL 
+ band_variable VVEL
+band_level 5000-ISBL 
+ band_variable DZDT
+band_level 5000-ISBL 
+ band_variable UGRD
+band_level 5000-ISBL 
+ band_variable VGRD
+band_level 5000-ISBL 
+ band_variable TKE
+band_level 5000-ISBL 
+ band_variable CLWMR
+band_level 5000-ISBL 
+ band_variable CICE
+band_level 5000-ISBL 
+ band_variable RWMR
+band_level 5000-ISBL 
+ band_variable SNMR
+band_level 5000-ISBL 
+ band_variable RIME
+band_level 7500-ISBL 
+ band_variable HGT
+band_level 7500-ISBL 
+ band_variable TMP
+band_level 7500-ISBL 
+ band_variable RH
+band_level 7500-ISBL 
+ band_variable SPFH
+band_level 7500-ISBL 
+ band_variable VVEL
+band_level 7500-ISBL 
+ band_variable DZDT
+band_level 7500-ISBL 
+ band_variable UGRD
+band_level 7500-ISBL 
+ band_variable VGRD
+band_level 7500-ISBL 
+ band_variable TKE
+band_level 7500-ISBL 
+ band_variable CLWMR
+band_level 7500-ISBL 
+ band_variable CICE
+band_level 7500-ISBL 
+ band_variable RWMR
+band_level 7500-ISBL 
+ band_variable SNMR
+band_level 7500-ISBL 
+ band_variable RIME
+band_level 10000-ISBL 
+ band_variable HGT
+band_level 10000-ISBL 
+ band_variable TMP
+band_level 10000-ISBL 
+ band_variable RH
+band_level 10000-ISBL 
+ band_variable SPFH
+band_level 10000-ISBL 
+ band_variable VVEL
+band_level 10000-ISBL 
+ band_variable DZDT
+band_level 10000-ISBL 
+ band_variable UGRD
+band_level 10000-ISBL 
+ band_variable VGRD
+band_level 10000-ISBL 
+ band_variable TKE
+band_level 10000-ISBL 
+ band_variable CLWMR
+band_level 10000-ISBL 
+ band_variable CICE
+band_level 10000-ISBL 
+ band_variable RWMR
+band_level 10000-ISBL 
+ band_variable SNMR
+band_level 10000-ISBL 
+ band_variable RIME
+band_level 12500-ISBL 
+ band_variable HGT
+band_level 12500-ISBL 
+ band_variable TMP
+band_level 12500-ISBL 
+ band_variable RH
+band_level 12500-ISBL 
+ band_variable SPFH
+band_level 12500-ISBL 
+ band_variable VVEL
+band_level 12500-ISBL 
+ band_variable DZDT
+band_level 12500-ISBL 
+ band_variable UGRD
+band_level 12500-ISBL 
+ band_variable VGRD
+band_level 12500-ISBL 
+ band_variable TKE
+band_level 12500-ISBL 
+ band_variable CLWMR
+band_level 12500-ISBL 
+ band_variable CICE
+band_level 12500-ISBL 
+ band_variable RWMR
+band_level 12500-ISBL 
+ band_variable SNMR
+band_level 12500-ISBL 
+ band_variable RIME
+band_level 15000-ISBL 
+ band_variable HGT
+band_level 15000-ISBL 
+ band_variable TMP
+band_level 15000-ISBL 
+ band_variable RH
+band_level 15000-ISBL 
+ band_variable SPFH
+band_level 15000-ISBL 
+ band_variable VVEL
+band_level 15000-ISBL 
+ band_variable DZDT
+band_level 15000-ISBL 
+ band_variable UGRD
+band_level 15000-ISBL 
+ band_variable VGRD
+band_level 15000-ISBL 
+ band_variable TKE
+band_level 15000-ISBL 
+ band_variable CLWMR
+band_level 15000-ISBL 
+ band_variable CICE
+band_level 15000-ISBL 
+ band_variable RWMR
+band_level 15000-ISBL 
+ band_variable SNMR
+band_level 15000-ISBL 
+ band_variable RIME
+band_level 17500-ISBL 
+ band_variable HGT
+band_level 17500-ISBL 
+ band_variable TMP
+band_level 17500-ISBL 
+ band_variable RH
+band_level 17500-ISBL 
+ band_variable SPFH
+band_level 17500-ISBL 
+ band_variable VVEL
+band_level 17500-ISBL 
+ band_variable DZDT
+band_level 17500-ISBL 
+ band_variable UGRD
+band_level 17500-ISBL 
+ band_variable VGRD
+band_level 17500-ISBL 
+ band_variable TKE
+band_level 17500-ISBL 
+ band_variable CLWMR
+band_level 17500-ISBL 
+ band_variable CICE
+band_level 17500-ISBL 
+ band_variable RWMR
+band_level 17500-ISBL 
+ band_variable SNMR
+band_level 17500-ISBL 
+ band_variable RIME
+band_level 20000-ISBL 
+ band_variable HGT
+band_level 20000-ISBL 
+ band_variable TMP
+band_level 20000-ISBL 
+ band_variable RH
+band_level 20000-ISBL 
+ band_variable SPFH
+band_level 20000-ISBL 
+ band_variable VVEL
+band_level 20000-ISBL 
+ band_variable DZDT
+band_level 20000-ISBL 
+ band_variable UGRD
+band_level 20000-ISBL 
+ band_variable VGRD
+band_level 20000-ISBL 
+ band_variable TKE
+band_level 20000-ISBL 
+ band_variable CLWMR
+band_level 20000-ISBL 
+ band_variable CICE
+band_level 20000-ISBL 
+ band_variable RWMR
+band_level 20000-ISBL 
+ band_variable SNMR
+band_level 20000-ISBL 
+ band_variable RIME
+band_level 22500-ISBL 
+ band_variable HGT
+band_level 22500-ISBL 
+ band_variable TMP
+band_level 22500-ISBL 
+ band_variable RH
+band_level 22500-ISBL 
+ band_variable SPFH
+band_level 22500-ISBL 
+ band_variable VVEL
+band_level 22500-ISBL 
+ band_variable DZDT
+band_level 22500-ISBL 
+ band_variable UGRD
+band_level 22500-ISBL 
+ band_variable VGRD
+band_level 22500-ISBL 
+ band_variable TKE
+band_level 22500-ISBL 
+ band_variable CLWMR
+band_level 22500-ISBL 
+ band_variable CICE
+band_level 22500-ISBL 
+ band_variable RWMR
+band_level 22500-ISBL 
+ band_variable SNMR
+band_level 22500-ISBL 
+ band_variable RIME
+band_level 25000-ISBL 
+ band_variable HGT
+band_level 25000-ISBL 
+ band_variable TMP
+band_level 25000-ISBL 
+ band_variable RH
+band_level 25000-ISBL 
+ band_variable SPFH
+band_level 25000-ISBL 
+ band_variable VVEL
+band_level 25000-ISBL 
+ band_variable DZDT
+band_level 25000-ISBL 
+ band_variable UGRD
+band_level 25000-ISBL 
+ band_variable VGRD
+band_level 25000-ISBL 
+ band_variable ABSV
+band_level 25000-ISBL 
+ band_variable STRM
+band_level 25000-ISBL 
+ band_variable TKE
+band_level 25000-ISBL 
+ band_variable CLWMR
+band_level 25000-ISBL 
+ band_variable CICE
+band_level 25000-ISBL 
+ band_variable RWMR
+band_level 25000-ISBL 
+ band_variable SNMR
+band_level 25000-ISBL 
+ band_variable RIME
+band_level 27500-ISBL 
+ band_variable HGT
+band_level 27500-ISBL 
+ band_variable TMP
+band_level 27500-ISBL 
+ band_variable RH
+band_level 27500-ISBL 
+ band_variable SPFH
+band_level 27500-ISBL 
+ band_variable VVEL
+band_level 27500-ISBL 
+ band_variable DZDT
+band_level 27500-ISBL 
+ band_variable UGRD
+band_level 27500-ISBL 
+ band_variable VGRD
+band_level 27500-ISBL 
+ band_variable TKE
+band_level 27500-ISBL 
+ band_variable CLWMR
+band_level 27500-ISBL 
+ band_variable CICE
+band_level 27500-ISBL 
+ band_variable RWMR
+band_level 27500-ISBL 
+ band_variable SNMR
+band_level 27500-ISBL 
+ band_variable RIME
+band_level 30000-ISBL 
+ band_variable HGT
+band_level 30000-ISBL 
+ band_variable TMP
+band_level 30000-ISBL 
+ band_variable RH
+band_level 30000-ISBL 
+ band_variable DPT
+band_level 30000-ISBL 
+ band_variable SPFH
+band_level 30000-ISBL 
+ band_variable VVEL
+band_level 30000-ISBL 
+ band_variable DZDT
+band_level 30000-ISBL 
+ band_variable UGRD
+band_level 30000-ISBL 
+ band_variable VGRD
+band_level 30000-ISBL 
+ band_variable TKE
+band_level 30000-ISBL 
+ band_variable CLWMR
+band_level 30000-ISBL 
+ band_variable CICE
+band_level 30000-ISBL 
+ band_variable RWMR
+band_level 30000-ISBL 
+ band_variable SNMR
+band_level 30000-ISBL 
+ band_variable RIME
+band_level 32500-ISBL 
+ band_variable HGT
+band_level 32500-ISBL 
+ band_variable TMP
+band_level 32500-ISBL 
+ band_variable RH
+band_level 32500-ISBL 
+ band_variable SPFH
+band_level 32500-ISBL 
+ band_variable VVEL
+band_level 32500-ISBL 
+ band_variable DZDT
+band_level 32500-ISBL 
+ band_variable UGRD
+band_level 32500-ISBL 
+ band_variable VGRD
+band_level 32500-ISBL 
+ band_variable TKE
+band_level 32500-ISBL 
+ band_variable CLWMR
+band_level 32500-ISBL 
+ band_variable CICE
+band_level 32500-ISBL 
+ band_variable RWMR
+band_level 32500-ISBL 
+ band_variable SNMR
+band_level 32500-ISBL 
+ band_variable RIME
+band_level 35000-ISBL 
+ band_variable HGT
+band_level 35000-ISBL 
+ band_variable TMP
+band_level 35000-ISBL 
+ band_variable RH
+band_level 35000-ISBL 
+ band_variable SPFH
+band_level 35000-ISBL 
+ band_variable VVEL
+band_level 35000-ISBL 
+ band_variable DZDT
+band_level 35000-ISBL 
+ band_variable UGRD
+band_level 35000-ISBL 
+ band_variable VGRD
+band_level 35000-ISBL 
+ band_variable TKE
+band_level 35000-ISBL 
+ band_variable CLWMR
+band_level 35000-ISBL 
+ band_variable CICE
+band_level 35000-ISBL 
+ band_variable RWMR
+band_level 35000-ISBL 
+ band_variable SNMR
+band_level 35000-ISBL 
+ band_variable RIME
+band_level 37500-ISBL 
+ band_variable HGT
+band_level 37500-ISBL 
+ band_variable TMP
+band_level 37500-ISBL 
+ band_variable RH
+band_level 37500-ISBL 
+ band_variable SPFH
+band_level 37500-ISBL 
+ band_variable VVEL
+band_level 37500-ISBL 
+ band_variable DZDT
+band_level 37500-ISBL 
+ band_variable UGRD
+band_level 37500-ISBL 
+ band_variable VGRD
+band_level 37500-ISBL 
+ band_variable TKE
+band_level 37500-ISBL 
+ band_variable CLWMR
+band_level 37500-ISBL 
+ band_variable CICE
+band_level 37500-ISBL 
+ band_variable RWMR
+band_level 37500-ISBL 
+ band_variable SNMR
+band_level 37500-ISBL 
+ band_variable RIME
+band_level 40000-ISBL 
+ band_variable HGT
+band_level 40000-ISBL 
+ band_variable TMP
+band_level 40000-ISBL 
+ band_variable RH
+band_level 40000-ISBL 
+ band_variable DPT
+band_level 40000-ISBL 
+ band_variable SPFH
+band_level 40000-ISBL 
+ band_variable VVEL
+band_level 40000-ISBL 
+ band_variable DZDT
+band_level 40000-ISBL 
+ band_variable UGRD
+band_level 40000-ISBL 
+ band_variable VGRD
+band_level 40000-ISBL 
+ band_variable ABSV
+band_level 40000-ISBL 
+ band_variable TKE
+band_level 40000-ISBL 
+ band_variable CLWMR
+band_level 40000-ISBL 
+ band_variable CICE
+band_level 40000-ISBL 
+ band_variable RWMR
+band_level 40000-ISBL 
+ band_variable SNMR
+band_level 40000-ISBL 
+ band_variable RIME
+band_level 42500-ISBL 
+ band_variable HGT
+band_level 42500-ISBL 
+ band_variable TMP
+band_level 42500-ISBL 
+ band_variable RH
+band_level 42500-ISBL 
+ band_variable SPFH
+band_level 42500-ISBL 
+ band_variable VVEL
+band_level 42500-ISBL 
+ band_variable DZDT
+band_level 42500-ISBL 
+ band_variable UGRD
+band_level 42500-ISBL 
+ band_variable VGRD
+band_level 42500-ISBL 
+ band_variable TKE
+band_level 42500-ISBL 
+ band_variable CLWMR
+band_level 42500-ISBL 
+ band_variable CICE
+band_level 42500-ISBL 
+ band_variable RWMR
+band_level 42500-ISBL 
+ band_variable SNMR
+band_level 42500-ISBL 
+ band_variable RIME
+band_level 45000-ISBL 
+ band_variable HGT
+band_level 45000-ISBL 
+ band_variable TMP
+band_level 45000-ISBL 
+ band_variable RH
+band_level 45000-ISBL 
+ band_variable SPFH
+band_level 45000-ISBL 
+ band_variable VVEL
+band_level 45000-ISBL 
+ band_variable DZDT
+band_level 45000-ISBL 
+ band_variable UGRD
+band_level 45000-ISBL 
+ band_variable VGRD
+band_level 45000-ISBL 
+ band_variable TKE
+band_level 45000-ISBL 
+ band_variable CLWMR
+band_level 45000-ISBL 
+ band_variable CICE
+band_level 45000-ISBL 
+ band_variable RWMR
+band_level 45000-ISBL 
+ band_variable SNMR
+band_level 45000-ISBL 
+ band_variable RIME
+band_level 47500-ISBL 
+ band_variable HGT
+band_level 47500-ISBL 
+ band_variable TMP
+band_level 47500-ISBL 
+ band_variable RH
+band_level 47500-ISBL 
+ band_variable SPFH
+band_level 47500-ISBL 
+ band_variable VVEL
+band_level 47500-ISBL 
+ band_variable DZDT
+band_level 47500-ISBL 
+ band_variable UGRD
+band_level 47500-ISBL 
+ band_variable VGRD
+band_level 47500-ISBL 
+ band_variable TKE
+band_level 47500-ISBL 
+ band_variable CLWMR
+band_level 47500-ISBL 
+ band_variable CICE
+band_level 47500-ISBL 
+ band_variable RWMR
+band_level 47500-ISBL 
+ band_variable SNMR
+band_level 47500-ISBL 
+ band_variable RIME
+band_level 50000-ISBL 
+ band_variable HGT
+band_level 50000-ISBL 
+ band_variable TMP
+band_level 50000-ISBL 
+ band_variable RH
+band_level 50000-ISBL 
+ band_variable DPT
+band_level 50000-ISBL 
+ band_variable SPFH
+band_level 50000-ISBL 
+ band_variable VVEL
+band_level 50000-ISBL 
+ band_variable DZDT
+band_level 50000-ISBL 
+ band_variable UGRD
+band_level 50000-ISBL 
+ band_variable VGRD
+band_level 50000-ISBL 
+ band_variable ABSV
+band_level 50000-ISBL 
+ band_variable TKE
+band_level 50000-ISBL 
+ band_variable CLWMR
+band_level 50000-ISBL 
+ band_variable CICE
+band_level 50000-ISBL 
+ band_variable RWMR
+band_level 50000-ISBL 
+ band_variable SNMR
+band_level 50000-ISBL 
+ band_variable RIME
+band_level 52500-ISBL 
+ band_variable HGT
+band_level 52500-ISBL 
+ band_variable TMP
+band_level 52500-ISBL 
+ band_variable RH
+band_level 52500-ISBL 
+ band_variable SPFH
+band_level 52500-ISBL 
+ band_variable VVEL
+band_level 52500-ISBL 
+ band_variable DZDT
+band_level 52500-ISBL 
+ band_variable UGRD
+band_level 52500-ISBL 
+ band_variable VGRD
+band_level 52500-ISBL 
+ band_variable TKE
+band_level 52500-ISBL 
+ band_variable CLWMR
+band_level 52500-ISBL 
+ band_variable CICE
+band_level 52500-ISBL 
+ band_variable RWMR
+band_level 52500-ISBL 
+ band_variable SNMR
+band_level 52500-ISBL 
+ band_variable RIME
+band_level 55000-ISBL 
+ band_variable HGT
+band_level 55000-ISBL 
+ band_variable TMP
+band_level 55000-ISBL 
+ band_variable RH
+band_level 55000-ISBL 
+ band_variable SPFH
+band_level 55000-ISBL 
+ band_variable VVEL
+band_level 55000-ISBL 
+ band_variable DZDT
+band_level 55000-ISBL 
+ band_variable UGRD
+band_level 55000-ISBL 
+ band_variable VGRD
+band_level 55000-ISBL 
+ band_variable TKE
+band_level 55000-ISBL 
+ band_variable CLWMR
+band_level 55000-ISBL 
+ band_variable CICE
+band_level 55000-ISBL 
+ band_variable RWMR
+band_level 55000-ISBL 
+ band_variable SNMR
+band_level 55000-ISBL 
+ band_variable RIME
+band_level 57500-ISBL 
+ band_variable HGT
+band_level 57500-ISBL 
+ band_variable TMP
+band_level 57500-ISBL 
+ band_variable RH
+band_level 57500-ISBL 
+ band_variable SPFH
+band_level 57500-ISBL 
+ band_variable VVEL
+band_level 57500-ISBL 
+ band_variable DZDT
+band_level 57500-ISBL 
+ band_variable UGRD
+band_level 57500-ISBL 
+ band_variable VGRD
+band_level 57500-ISBL 
+ band_variable TKE
+band_level 57500-ISBL 
+ band_variable CLWMR
+band_level 57500-ISBL 
+ band_variable CICE
+band_level 57500-ISBL 
+ band_variable RWMR
+band_level 57500-ISBL 
+ band_variable SNMR
+band_level 57500-ISBL 
+ band_variable RIME
+band_level 60000-ISBL 
+ band_variable HGT
+band_level 60000-ISBL 
+ band_variable TMP
+band_level 60000-ISBL 
+ band_variable RH
+band_level 60000-ISBL 
+ band_variable SPFH
+band_level 60000-ISBL 
+ band_variable VVEL
+band_level 60000-ISBL 
+ band_variable DZDT
+band_level 60000-ISBL 
+ band_variable UGRD
+band_level 60000-ISBL 
+ band_variable VGRD
+band_level 60000-ISBL 
+ band_variable TKE
+band_level 60000-ISBL 
+ band_variable CLWMR
+band_level 60000-ISBL 
+ band_variable CICE
+band_level 60000-ISBL 
+ band_variable RWMR
+band_level 60000-ISBL 
+ band_variable SNMR
+band_level 60000-ISBL 
+ band_variable RIME
+band_level 62500-ISBL 
+ band_variable HGT
+band_level 62500-ISBL 
+ band_variable TMP
+band_level 62500-ISBL 
+ band_variable RH
+band_level 62500-ISBL 
+ band_variable SPFH
+band_level 62500-ISBL 
+ band_variable VVEL
+band_level 62500-ISBL 
+ band_variable DZDT
+band_level 62500-ISBL 
+ band_variable UGRD
+band_level 62500-ISBL 
+ band_variable VGRD
+band_level 62500-ISBL 
+ band_variable TKE
+band_level 62500-ISBL 
+ band_variable CLWMR
+band_level 62500-ISBL 
+ band_variable CICE
+band_level 62500-ISBL 
+ band_variable RWMR
+band_level 62500-ISBL 
+ band_variable SNMR
+band_level 62500-ISBL 
+ band_variable RIME
+band_level 65000-ISBL 
+ band_variable HGT
+band_level 65000-ISBL 
+ band_variable TMP
+band_level 65000-ISBL 
+ band_variable RH
+band_level 65000-ISBL 
+ band_variable SPFH
+band_level 65000-ISBL 
+ band_variable VVEL
+band_level 65000-ISBL 
+ band_variable DZDT
+band_level 65000-ISBL 
+ band_variable UGRD
+band_level 65000-ISBL 
+ band_variable VGRD
+band_level 65000-ISBL 
+ band_variable TKE
+band_level 65000-ISBL 
+ band_variable CLWMR
+band_level 65000-ISBL 
+ band_variable CICE
+band_level 65000-ISBL 
+ band_variable RWMR
+band_level 65000-ISBL 
+ band_variable SNMR
+band_level 65000-ISBL 
+ band_variable RIME
+band_level 67500-ISBL 
+ band_variable HGT
+band_level 67500-ISBL 
+ band_variable TMP
+band_level 67500-ISBL 
+ band_variable RH
+band_level 67500-ISBL 
+ band_variable SPFH
+band_level 67500-ISBL 
+ band_variable VVEL
+band_level 67500-ISBL 
+ band_variable DZDT
+band_level 67500-ISBL 
+ band_variable UGRD
+band_level 67500-ISBL 
+ band_variable VGRD
+band_level 67500-ISBL 
+ band_variable TKE
+band_level 67500-ISBL 
+ band_variable CLWMR
+band_level 67500-ISBL 
+ band_variable CICE
+band_level 67500-ISBL 
+ band_variable RWMR
+band_level 67500-ISBL 
+ band_variable SNMR
+band_level 67500-ISBL 
+ band_variable RIME
+band_level 70000-ISBL 
+ band_variable HGT
+band_level 70000-ISBL 
+ band_variable TMP
+band_level 70000-ISBL 
+ band_variable RH
+band_level 70000-ISBL 
+ band_variable DPT
+band_level 70000-ISBL 
+ band_variable SPFH
+band_level 70000-ISBL 
+ band_variable VVEL
+band_level 70000-ISBL 
+ band_variable DZDT
+band_level 70000-ISBL 
+ band_variable UGRD
+band_level 70000-ISBL 
+ band_variable VGRD
+band_level 70000-ISBL 
+ band_variable ABSV
+band_level 70000-ISBL 
+ band_variable TKE
+band_level 70000-ISBL 
+ band_variable CLWMR
+band_level 70000-ISBL 
+ band_variable CICE
+band_level 70000-ISBL 
+ band_variable RWMR
+band_level 70000-ISBL 
+ band_variable SNMR
+band_level 70000-ISBL 
+ band_variable RIME
+band_level 72500-ISBL 
+ band_variable HGT
+band_level 72500-ISBL 
+ band_variable TMP
+band_level 72500-ISBL 
+ band_variable RH
+band_level 72500-ISBL 
+ band_variable SPFH
+band_level 72500-ISBL 
+ band_variable VVEL
+band_level 72500-ISBL 
+ band_variable DZDT
+band_level 72500-ISBL 
+ band_variable UGRD
+band_level 72500-ISBL 
+ band_variable VGRD
+band_level 72500-ISBL 
+ band_variable TKE
+band_level 72500-ISBL 
+ band_variable CLWMR
+band_level 72500-ISBL 
+ band_variable CICE
+band_level 72500-ISBL 
+ band_variable RWMR
+band_level 72500-ISBL 
+ band_variable SNMR
+band_level 72500-ISBL 
+ band_variable RIME
+band_level 75000-ISBL 
+ band_variable HGT
+band_level 75000-ISBL 
+ band_variable TMP
+band_level 75000-ISBL 
+ band_variable RH
+band_level 75000-ISBL 
+ band_variable SPFH
+band_level 75000-ISBL 
+ band_variable VVEL
+band_level 75000-ISBL 
+ band_variable DZDT
+band_level 75000-ISBL 
+ band_variable UGRD
+band_level 75000-ISBL 
+ band_variable VGRD
+band_level 75000-ISBL 
+ band_variable ABSV
+band_level 75000-ISBL 
+ band_variable TKE
+band_level 75000-ISBL 
+ band_variable CLWMR
+band_level 75000-ISBL 
+ band_variable CICE
+band_level 75000-ISBL 
+ band_variable RWMR
+band_level 75000-ISBL 
+ band_variable SNMR
+band_level 75000-ISBL 
+ band_variable RIME
+band_level 77500-ISBL 
+ band_variable HGT
+band_level 77500-ISBL 
+ band_variable TMP
+band_level 77500-ISBL 
+ band_variable RH
+band_level 77500-ISBL 
+ band_variable SPFH
+band_level 77500-ISBL 
+ band_variable VVEL
+band_level 77500-ISBL 
+ band_variable DZDT
+band_level 77500-ISBL 
+ band_variable UGRD
+band_level 77500-ISBL 
+ band_variable VGRD
+band_level 77500-ISBL 
+ band_variable TKE
+band_level 77500-ISBL 
+ band_variable CLWMR
+band_level 77500-ISBL 
+ band_variable CICE
+band_level 77500-ISBL 
+ band_variable RWMR
+band_level 77500-ISBL 
+ band_variable SNMR
+band_level 77500-ISBL 
+ band_variable RIME
+band_level 80000-ISBL 
+ band_variable HGT
+band_level 80000-ISBL 
+ band_variable TMP
+band_level 80000-ISBL 
+ band_variable RH
+band_level 80000-ISBL 
+ band_variable SPFH
+band_level 80000-ISBL 
+ band_variable VVEL
+band_level 80000-ISBL 
+ band_variable DZDT
+band_level 80000-ISBL 
+ band_variable UGRD
+band_level 80000-ISBL 
+ band_variable VGRD
+band_level 80000-ISBL 
+ band_variable TKE
+band_level 80000-ISBL 
+ band_variable CLWMR
+band_level 80000-ISBL 
+ band_variable CICE
+band_level 80000-ISBL 
+ band_variable RWMR
+band_level 80000-ISBL 
+ band_variable SNMR
+band_level 80000-ISBL 
+ band_variable RIME
+band_level 82500-ISBL 
+ band_variable HGT
+band_level 82500-ISBL 
+ band_variable TMP
+band_level 82500-ISBL 
+ band_variable RH
+band_level 82500-ISBL 
+ band_variable SPFH
+band_level 82500-ISBL 
+ band_variable VVEL
+band_level 82500-ISBL 
+ band_variable DZDT
+band_level 82500-ISBL 
+ band_variable UGRD
+band_level 82500-ISBL 
+ band_variable VGRD
+band_level 82500-ISBL 
+ band_variable TKE
+band_level 82500-ISBL 
+ band_variable CLWMR
+band_level 82500-ISBL 
+ band_variable CICE
+band_level 82500-ISBL 
+ band_variable RWMR
+band_level 82500-ISBL 
+ band_variable SNMR
+band_level 82500-ISBL 
+ band_variable RIME
+band_level 85000-ISBL 
+ band_variable HGT
+band_level 85000-ISBL 
+ band_variable TMP
+band_level 85000-ISBL 
+ band_variable RH
+band_level 85000-ISBL 
+ band_variable DPT
+band_level 85000-ISBL 
+ band_variable SPFH
+band_level 85000-ISBL 
+ band_variable VVEL
+band_level 85000-ISBL 
+ band_variable DZDT
+band_level 85000-ISBL 
+ band_variable MCONV
+band_level 85000-ISBL 
+ band_variable UGRD
+band_level 85000-ISBL 
+ band_variable VGRD
+band_level 85000-ISBL 
+ band_variable ABSV
+band_level 85000-ISBL 
+ band_variable TKE
+band_level 85000-ISBL 
+ band_variable CLWMR
+band_level 85000-ISBL 
+ band_variable CICE
+band_level 85000-ISBL 
+ band_variable RWMR
+band_level 85000-ISBL 
+ band_variable SNMR
+band_level 85000-ISBL 
+ band_variable RIME
+band_level 87500-ISBL 
+ band_variable HGT
+band_level 87500-ISBL 
+ band_variable TMP
+band_level 87500-ISBL 
+ band_variable RH
+band_level 87500-ISBL 
+ band_variable SPFH
+band_level 87500-ISBL 
+ band_variable VVEL
+band_level 87500-ISBL 
+ band_variable DZDT
+band_level 87500-ISBL 
+ band_variable UGRD
+band_level 87500-ISBL 
+ band_variable VGRD
+band_level 87500-ISBL 
+ band_variable TKE
+band_level 87500-ISBL 
+ band_variable CLWMR
+band_level 87500-ISBL 
+ band_variable CICE
+band_level 87500-ISBL 
+ band_variable RWMR
+band_level 87500-ISBL 
+ band_variable SNMR
+band_level 87500-ISBL 
+ band_variable RIME
+band_level 90000-ISBL 
+ band_variable HGT
+band_level 90000-ISBL 
+ band_variable TMP
+band_level 90000-ISBL 
+ band_variable RH
+band_level 90000-ISBL 
+ band_variable SPFH
+band_level 90000-ISBL 
+ band_variable VVEL
+band_level 90000-ISBL 
+ band_variable DZDT
+band_level 90000-ISBL 
+ band_variable UGRD
+band_level 90000-ISBL 
+ band_variable VGRD
+band_level 90000-ISBL 
+ band_variable TKE
+band_level 90000-ISBL 
+ band_variable CLWMR
+band_level 90000-ISBL 
+ band_variable CICE
+band_level 90000-ISBL 
+ band_variable RWMR
+band_level 90000-ISBL 
+ band_variable SNMR
+band_level 90000-ISBL 
+ band_variable RIME
+band_level 92500-ISBL 
+ band_variable HGT
+band_level 92500-ISBL 
+ band_variable TMP
+band_level 92500-ISBL 
+ band_variable RH
+band_level 92500-ISBL 
+ band_variable DPT
+band_level 92500-ISBL 
+ band_variable SPFH
+band_level 92500-ISBL 
+ band_variable VVEL
+band_level 92500-ISBL 
+ band_variable DZDT
+band_level 92500-ISBL 
+ band_variable UGRD
+band_level 92500-ISBL 
+ band_variable VGRD
+band_level 92500-ISBL 
+ band_variable TKE
+band_level 92500-ISBL 
+ band_variable CLWMR
+band_level 92500-ISBL 
+ band_variable CICE
+band_level 92500-ISBL 
+ band_variable RWMR
+band_level 92500-ISBL 
+ band_variable SNMR
+band_level 92500-ISBL 
+ band_variable RIME
+band_level 95000-ISBL 
+ band_variable HGT
+band_level 95000-ISBL 
+ band_variable TMP
+band_level 95000-ISBL 
+ band_variable RH
+band_level 95000-ISBL 
+ band_variable SPFH
+band_level 95000-ISBL 
+ band_variable VVEL
+band_level 95000-ISBL 
+ band_variable DZDT
+band_level 95000-ISBL 
+ band_variable MCONV
+band_level 95000-ISBL 
+ band_variable UGRD
+band_level 95000-ISBL 
+ band_variable VGRD
+band_level 95000-ISBL 
+ band_variable TKE
+band_level 95000-ISBL 
+ band_variable CLWMR
+band_level 95000-ISBL 
+ band_variable CICE
+band_level 95000-ISBL 
+ band_variable RWMR
+band_level 95000-ISBL 
+ band_variable SNMR
+band_level 95000-ISBL 
+ band_variable RIME
+band_level 0-SFC 
+ band_variable unknown
+band_level 97500-ISBL 
+ band_variable HGT
+band_level 97500-ISBL 
+ band_variable TMP
+band_level 97500-ISBL 
+ band_variable RH
+band_level 97500-ISBL 
+ band_variable SPFH
+band_level 97500-ISBL 
+ band_variable VVEL
+band_level 97500-ISBL 
+ band_variable DZDT
+band_level 97500-ISBL 
+ band_variable UGRD
+band_level 97500-ISBL 
+ band_variable VGRD
+band_level 97500-ISBL 
+ band_variable TKE
+band_level 97500-ISBL 
+ band_variable CLWMR
+band_level 97500-ISBL 
+ band_variable CICE
+band_level 97500-ISBL 
+ band_variable RWMR
+band_level 97500-ISBL 
+ band_variable SNMR
+band_level 97500-ISBL 
+ band_variable RIME
+band_level 100000-ISBL 
+ band_variable TMP
+band_level 100000-ISBL 
+ band_variable RH
+band_level 100000-ISBL 
+ band_variable DPT
+band_level 100000-ISBL 
+ band_variable SPFH
+band_level 100000-ISBL 
+ band_variable VVEL
+band_level 100000-ISBL 
+ band_variable DZDT
+band_level 100000-ISBL 
+ band_variable UGRD
+band_level 100000-ISBL 
+ band_variable VGRD
+band_level 100000-ISBL 
+ band_variable ABSV
+band_level 100000-ISBL 
+ band_variable TKE
+band_level 100000-ISBL 
+ band_variable CLWMR
+band_level 100000-ISBL 
+ band_variable CICE
+band_level 100000-ISBL 
+ band_variable RWMR
+band_level 100000-ISBL 
+ band_variable SNMR
+band_level 100000-ISBL 
+ band_variable RIME
+band_level 40000-100000-ISBL 
+ band_variable unknown
+band_level 40000-100000-ISBL 
+ band_variable unknown
+band_level 0-MSL 
+ band_variable MSLET
+band_level 100000-ISBL 
+ band_variable HGT
+band_level 4000-HTGL 
+ band_variable REFD
+band_level 1000-HTGL 
+ band_variable REFD
+band_level 1000-HTGL 
+ band_variable unknown
+band_level 5000-2000-HTGL 
+ band_variable unknown
+band_level 0-SFC 
+ band_variable PRES
+band_level 0-SFC 
+ band_variable HGT
+band_level 0-SFC 
+ band_variable TMP
+band_level 0-SFC 
+ band_variable SPFH
+band_level 0-0.1-DBLL 
+ band_variable TSOIL
+band_level 0-0.1-DBLL 
+ band_variable SOILW
+band_level 0-0.1-DBLL 
+ band_variable SOILL
+band_level 0.1-0.4-DBLL 
+ band_variable TSOIL
+band_level 0.1-0.4-DBLL 
+ band_variable SOILW
+band_level 0.1-0.4-DBLL 
+ band_variable SOILL
+band_level 0.4-1-DBLL 
+ band_variable TSOIL
+band_level 0.4-1-DBLL 
+ band_variable SOILW
+band_level 0.4-1-DBLL 
+ band_variable SOILL
+band_level 1-2-DBLL 
+ band_variable TSOIL
+band_level 1-2-DBLL 
+ band_variable SOILW
+band_level 1-2-DBLL 
+ band_variable SOILL
+band_level 3-DBLL 
+ band_variable TSOIL
+band_level 0-1-DBLL 
+ band_variable MSTAV
+band_level 0-2-DBLL 
+ band_variable SOILM
+band_level 0-SFC 
+ band_variable CNWAT
+band_level 0-SFC 
+ band_variable SNOWC
+band_level 0-SFC 
+ band_variable SMDRY
+band_level 0-SFC 
+ band_variable POROS
+band_level 2-HTGL 
+ band_variable TMP
+band_level 2-HTGL 
+ band_variable SPFH
+band_level 2-HTGL 
+ band_variable DPT
+band_level 2-HTGL 
+ band_variable RH
+band_level 2-HTGL 
+ band_variable TMAX
+band_level 2-HTGL 
+ band_variable TMIN
+band_level 2-HTGL 
+ band_variable MAXRH
+band_level 2-HTGL 
+ band_variable MINRH
+band_level 10-HTGL 
+ band_variable UGRD
+band_level 10-HTGL 
+ band_variable VGRD
+band_level 10-HTGL 
+ band_variable unknown
+band_level 10-HTGL 
+ band_variable unknown
+band_level 10-HTGL 
+ band_variable POT
+band_level 10-HTGL 
+ band_variable SPFH
+band_level 0-SFC 
+ band_variable CPOFP
+band_level 0-SFC 
+ band_variable PRATE
+band_level 0-SFC 
+ band_variable PRATE
+band_level 0-SFC 
+ band_variable SRWEQ
+band_level 0-SFC 
+ band_variable NCPCP
+band_level 0-SFC 
+ band_variable SNOM
+band_level 0-SFC 
+ band_variable SSRUN
+band_level 0-SFC 
+ band_variable BGRUN
+band_level 0-LLTW 
+ band_variable HGT
+band_level 0-SFC 
+ band_variable CSNOW
+band_level 0-SFC 
+ band_variable CICEP
+band_level 0-SFC 
+ band_variable CFRZR
+band_level 0-SFC 
+ band_variable CRAIN
+band_level 0-SFC 
+ band_variable LHTFL
+band_level 0-SFC 
+ band_variable SHTFL
+band_level 0-SFC 
+ band_variable GFLUX
+band_level 0-SFC 
+ band_variable SNOHF
+band_level 0-SFC 
+ band_variable EVP
+band_level 0-SFC 
+ band_variable PEVAP
+band_level 0-SFC 
+ band_variable SFCR
+band_level 0-SFC 
+ band_variable FRICV
+band_level 0-SFC 
+ band_variable CD
+band_level 0-SFC 
+ band_variable UFLX
+band_level 0-SFC 
+ band_variable VFLX
+band_level 0-SFC 
+ band_variable SHTFL
+band_level 0-SFC 
+ band_variable LHTFL
+band_level 0-SFC 
+ band_variable SFEXC
+band_level 0-SFC 
+ band_variable VEG
+band_level 0-SFC 
+ band_variable GFLUX
+band_level 0-SFC 
+ band_variable VGTYP
+band_level 0-SFC 
+ band_variable SOTYP
+band_level 0-SFC 
+ band_variable CCOND
+band_level 0-SFC 
+ band_variable RSMIN
+band_level 0-SFC 
+ band_variable RLYRS
+band_level 0-SFC 
+ band_variable WILT
+band_level 0-SFC 
+ band_variable SMREF
+band_level 0-SFC 
+ band_variable RCS
+band_level 0-SFC 
+ band_variable RCT
+band_level 0-SFC 
+ band_variable RCQ
+band_level 0-SFC 
+ band_variable RCSOL
+band_level 50000-100000-ISBL 
+ band_variable LFTX
+band_level 0-SFC 
+ band_variable CAPE
+band_level 0-SFC 
+ band_variable CIN
+band_level 0-EATM 
+ band_variable PWAT
+band_level 0-EATM 
+ band_variable TCOLW
+band_level 0-EATM 
+ band_variable TCOLI
+band_level 0-EATM 
+ band_variable TCOLR
+band_level 0-EATM 
+ band_variable TCOLS
+band_level 0-EATM 
+ band_variable TCOLC
+band_level 0-EATM 
+ band_variable TCLSW
+band_level 0-EATM 
+ band_variable TCOLM
+band_level 0-EATM 
+ band_variable SWHR
+band_level 0-EATM 
+ band_variable LWHR
+band_level 0-EATM 
+ band_variable LRGHR
+band_level 0-EATM 
+ band_variable MCONV
+band_level 0-LBLSW 
+ band_variable HGT
+band_level 0-HTLSW 
+ band_variable HGT
+band_level 0-LCY 
+ band_variable LCDC
+band_level 0-MCY 
+ band_variable MCDC
+band_level 0-HCY 
+ band_variable HCDC
+band_level 0-CBL 
+ band_variable PRES
+band_level 0-CBL 
+ band_variable HGT
+band_level 0-CEIL 
+ band_variable HGT
+band_level 0-GCBL 
+ band_variable PRES
+band_level 0-CTL 
+ band_variable PRES
+band_level 0-CTL 
+ band_variable HGT
+band_level 0-CTL 
+ band_variable TMP
+band_level 0-NTAT 
+ band_variable BRTMP
+band_level 0-GCTL 
+ band_variable PRES
+band_level 0-SFC 
+ band_variable DSWRF
+band_level 0-SFC 
+ band_variable DLWRF
+band_level 0-SFC 
+ band_variable USWRF
+band_level 0-SFC 
+ band_variable ULWRF
+band_level 0-NTAT 
+ band_variable USWRF
+band_level 0-NTAT 
+ band_variable ULWRF
+band_level 0-NTAT 
+ band_variable ULWRF
+band_level 0-SFC 
+ band_variable DSWRF
+band_level 0-SFC 
+ band_variable DLWRF
+band_level 0-SFC 
+ band_variable USWRF
+band_level 0-SFC 
+ band_variable ULWRF
+band_level 0-SFC 
+ band_variable CSDSF
+band_level 3000-0-HTGL 
+ band_variable HLCY
+band_level 1000-0-HTGL 
+ band_variable HLCY
+band_level 6000-0-HTGL 
+ band_variable USTM
+band_level 6000-0-HTGL 
+ band_variable VSTM
+band_level 5000-2000-HTGL 
+ band_variable UPHL
+band_level 0-6000-HTGL 
+ band_variable VUCSH
+band_level 0-6000-HTGL 
+ band_variable VVCSH
+band_level 0-TRO 
+ band_variable PRES
+band_level 0-TRO 
+ band_variable TMP
+band_level 0-TRO 
+ band_variable UGRD
+band_level 0-TRO 
+ band_variable VGRD
+band_level 0-TRO 
+ band_variable VWSH
+band_level 0-MWSL 
+ band_variable PRES
+band_level 0-MWSL 
+ band_variable HGT
+band_level 0-MWSL 
+ band_variable UGRD
+band_level 0-MWSL 
+ band_variable VGRD
+band_level 80-HTGL 
+ band_variable TMP
+band_level 80-HTGL 
+ band_variable SPFH
+band_level 80-HTGL 
+ band_variable PRES
+band_level 80-HTGL 
+ band_variable UGRD
+band_level 80-HTGL 
+ band_variable VGRD
+band_level 305-GPML 
+ band_variable TMP
+band_level 305-GPML 
+ band_variable UGRD
+band_level 305-GPML 
+ band_variable VGRD
+band_level 457-GPML 
+ band_variable TMP
+band_level 457-GPML 
+ band_variable UGRD
+band_level 457-GPML 
+ band_variable VGRD
+band_level 610-GPML 
+ band_variable TMP
+band_level 610-GPML 
+ band_variable UGRD
+band_level 610-GPML 
+ band_variable VGRD
+band_level 914-GPML 
+ band_variable TMP
+band_level 914-GPML 
+ band_variable UGRD
+band_level 914-GPML 
+ band_variable VGRD
+band_level 1524-GPML 
+ band_variable TMP
+band_level 1524-GPML 
+ band_variable UGRD
+band_level 1524-GPML 
+ band_variable VGRD
+band_level 1829-GPML 
+ band_variable TMP
+band_level 1829-GPML 
+ band_variable UGRD
+band_level 1829-GPML 
+ band_variable VGRD
+band_level 2134-GPML 
+ band_variable TMP
+band_level 2134-GPML 
+ band_variable UGRD
+band_level 2134-GPML 
+ band_variable VGRD
+band_level 2743-GPML 
+ band_variable TMP
+band_level 2743-GPML 
+ band_variable UGRD
+band_level 2743-GPML 
+ band_variable VGRD
+band_level 3658-GPML 
+ band_variable TMP
+band_level 3658-GPML 
+ band_variable UGRD
+band_level 3658-GPML 
+ band_variable VGRD
+band_level 4572-GPML 
+ band_variable TMP
+band_level 4572-GPML 
+ band_variable UGRD
+band_level 4572-GPML 
+ band_variable VGRD
+band_level 0-0DEG 
+ band_variable HGT
+band_level 0-0DEG 
+ band_variable RH
+band_level 0-HTFL 
+ band_variable HGT
+band_level 3000-0-SPDL 
+ band_variable PRES
+band_level 3000-0-SPDL 
+ band_variable TMP
+band_level 3000-0-SPDL 
+ band_variable POT
+band_level 3000-0-SPDL 
+ band_variable RH
+band_level 3000-0-SPDL 
+ band_variable DPT
+band_level 3000-0-SPDL 
+ band_variable SPFH
+band_level 3000-0-SPDL 
+ band_variable MCONV
+band_level 3000-0-SPDL 
+ band_variable UGRD
+band_level 3000-0-SPDL 
+ band_variable VGRD
+band_level 3000-0-SPDL 
+ band_variable VVEL
+band_level 3000-0-SPDL 
+ band_variable PWAT
+band_level 3000-0-SPDL 
+ band_variable PLI
+band_level 6000-3000-SPDL 
+ band_variable PRES
+band_level 6000-3000-SPDL 
+ band_variable TMP
+band_level 6000-3000-SPDL 
+ band_variable RH
+band_level 6000-3000-SPDL 
+ band_variable SPFH
+band_level 6000-3000-SPDL 
+ band_variable UGRD
+band_level 6000-3000-SPDL 
+ band_variable VGRD
+band_level 9000-6000-SPDL 
+ band_variable PRES
+band_level 9000-6000-SPDL 
+ band_variable TMP
+band_level 9000-6000-SPDL 
+ band_variable RH
+band_level 9000-6000-SPDL 
+ band_variable SPFH
+band_level 9000-6000-SPDL 
+ band_variable UGRD
+band_level 9000-6000-SPDL 
+ band_variable VGRD
+band_level 9000-6000-SPDL 
+ band_variable VVEL
+band_level 12000-9000-SPDL 
+ band_variable PRES
+band_level 12000-9000-SPDL 
+ band_variable TMP
+band_level 12000-9000-SPDL 
+ band_variable RH
+band_level 12000-9000-SPDL 
+ band_variable SPFH
+band_level 12000-9000-SPDL 
+ band_variable UGRD
+band_level 12000-9000-SPDL 
+ band_variable VGRD
+band_level 15000-12000-SPDL 
+ band_variable PRES
+band_level 15000-12000-SPDL 
+ band_variable TMP
+band_level 15000-12000-SPDL 
+ band_variable RH
+band_level 15000-12000-SPDL 
+ band_variable SPFH
+band_level 15000-12000-SPDL 
+ band_variable UGRD
+band_level 15000-12000-SPDL 
+ band_variable VGRD
+band_level 18000-15000-SPDL 
+ band_variable PRES
+band_level 18000-15000-SPDL 
+ band_variable TMP
+band_level 18000-15000-SPDL 
+ band_variable RH
+band_level 18000-15000-SPDL 
+ band_variable SPFH
+band_level 18000-15000-SPDL 
+ band_variable UGRD
+band_level 18000-15000-SPDL 
+ band_variable VGRD
+band_level 18000-15000-SPDL 
+ band_variable VVEL
+band_level 18000-0-SPDL 
+ band_variable 4LFTX
+band_level 18000-0-SPDL 
+ band_variable CAPE
+band_level 18000-0-SPDL 
+ band_variable CIN
+band_level 0-SFC 
+ band_variable HPBL
+band_level 0-ADCL 
+ band_variable HGT
+band_level 0-ADCL 
+ band_variable PRES
+band_level 9000-0-SPDL 
+ band_variable CAPE
+band_level 9000-0-SPDL 
+ band_variable CIN
+band_level 25500-0-SPDL 
+ band_variable CAPE
+band_level 25500-0-SPDL 
+ band_variable CIN
+band_level 25500-0-SPDL 
+ band_variable PLPL
+band_level 0-SFC 
+ band_variable LTNG
+band_level 0-SFC 
+ band_variable LAND
+band_level 0-SFC 
+ band_variable ICEC
+band_level 0-SFC 
+ band_variable ALBDO
+band_level 0-SFC 
+ band_variable SNFALB
+band_level 0-SFC 
+ band_variable MXSALB
+band_level 0-SFC 
+ band_variable WTMP
+band_level 0-SFC 
+ band_variable WEASD
+band_level 0-SFC 
+ band_variable SNOD
+band_level 0-SFC 
+ band_variable APCP01
+band_level 0-SFC 
+ band_variable WEASD
+band_level 0-EATM 
+ band_variable TCDC
