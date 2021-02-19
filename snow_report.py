@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 def main(basin, date, comparison_days):
     try:
-        file = os.path.join('G:\Shared Files\Power Marketing\Weather', 'Daily_Output.xlsx')
+        file = os.path.join('G:/Energy Marketing/Weather', 'Daily_Output.xlsx')
         df1 = pd.read_excel(file, sheet_name='French_Meadows')
         df1.set_index(pd.DatetimeIndex(df1.Date), inplace=True)
         yesterday = (datetime.datetime.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
@@ -92,7 +92,7 @@ def main(basin, date, comparison_days):
         draw.text(((widths[0]-wt)/2, 0), tot_text,(0, 0, 0), font=font)
         draw.text(((widths[0]-wd)/2, hsize ), delta_text,(0, 0, 0), font=font)
     new_im = new_im.resize((int(total_width/10),int(max_height/10)), Image.ANTIALIAS)
-    new_im.save(os.path.join('G:/Shared Files/Power Marketing/Weather', ofile))
+    new_im.save(os.path.join('G:/Energy Marketing/Weather', ofile))
     #change_im.save('Change.jpg')
 
     #x_offset = 0

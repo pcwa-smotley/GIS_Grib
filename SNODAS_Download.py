@@ -74,8 +74,12 @@ def main(model, analysis_date):
         # If this line is not inlcuded, tar will not find all the members in the file. It's probably because tar is
         # executing the next line before the file is fully ready in memory? But I can't confirm this.
         members = tar.getmembers()
+        extension = 'Hdr'
+        # After 2019 the extension names for the description files were changed from 'Hdr' to 'txt'
+        if dt >= datetime(2019, 7, 1):
+            extension = 'txt'
         # gunzip to extract both dat and Hdr files, tar.gz
-        for ext in ('dat', 'Hdr'):
+        for ext in ('dat', extension):
             tar_subfn_str = tar_subfn_str_fmt % (code, ext)
             tar_subfn_gz = dt.strftime(tar_subfn_str)
             tar_subfn = os.path.splitext(tar_subfn_gz)[0]

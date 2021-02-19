@@ -17,6 +17,7 @@ Created on February 1, 2018
 
 @VersionHistory:
     v0.1: 2/01/18 Beta version
+    v0.2: 3/14/19 Updated projection information since the grid size MUST be in 3857 to do volumne calcs.
 '''
 
 #import matplotlib as mpl
@@ -238,7 +239,7 @@ def main():
             m = Basemap(llcrnrlon=-122.8, llcrnrlat=37.3,
                         urcrnrlon=-119.0, urcrnrlat=40.3, ax=ax)
 
-            m.arcgisimage(service='ESRI_Imagery_World_2D', xpixels=2000, verbose=True)
+            m.arcgisimage(service='World_Imagery', xpixels=2000, verbose=True)
             #m.arcgisimage(service='World_Shaded_Relief', xpixels=2000, verbose=True)
 
             #For inset
@@ -257,7 +258,7 @@ def main():
             m2 = Basemap(llcrnrlon=-120.7, llcrnrlat=38.7,
                          urcrnrlon=-120.1, urcrnrlat=39.3, ax=axin)
 
-            m2.arcgisimage(service='ESRI_Imagery_World_2D', xpixels=2000, verbose=True)
+            m2.arcgisimage(service='World_Imagery', xpixels=2000, verbose=True)
             mark_inset(ax, axin, loc1=2, loc2=4, fc="none", ec="0.5")
 
             ###################################DEBUGGING AREA###############################################################
@@ -309,13 +310,18 @@ def get_snowdas(gribObj,date):
     #    sd.main('snodas',date)
     #if os.path.exists and os.listdir(snowdas_dir)==[]: #it's empty
     #    sd.main('snodas', date)
-    sd.main('snodas', date) # Download no matter what.
+    sd.main('snodas', date) # Download no matter what..
+
+    # After 2019 the extension names for the description files were changed from 'Hdr' to 'txt'
+    extension = 'Hdr'
+    if datetime.datetime.strptime(date, '%Y%m%d') >= datetime.datetime(2019, 7, 1):
+        extension = 'txt'
     for file in os.listdir(snowdas_dir):
-        if file.endswith('.Hdr'):
+        if file.endswith(extension):
             gribObj.gribAll = gdal.Open(os.path.join(snowdas_dir,file), GA_ReadOnly)
             #<--Extract Date Info-->
             f = open(snowdas_dir + './' + file, 'r')
-            ' The .HDR file contains a bunch of dates, the dates labeled "Start ___" is the valid time stamp for the file'
+            ' The .txt file contains a bunch of dates, the dates labeled "Start ___" is the valid time stamp for the file'
             year_str = 'Start year'
             month_str = 'Start month'
             day_str = 'Start day'
@@ -635,7 +641,7 @@ def makePlot(elevation_bins,deltaDay):
     return
 
 def excel_output(df_elevations):
-    efile = os.path.join('G:\Shared Files\Power Marketing\Weather','Daily_Output.xlsx')
+    efile = os.path.join('G:/Energy Marketing/Weather','Daily_Output.xlsx')
     book = load_workbook(efile)
     writer = pd.ExcelWriter(efile, engine='openpyxl')
     writer.book = book
