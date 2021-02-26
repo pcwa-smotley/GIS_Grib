@@ -36,13 +36,15 @@ import shapely.ops as ops
 from functools import partial
 from PIL import Image, ImageFont, ImageDraw
 import datetime
+import platform
+import urllib
 
 import os, sys
 import numpy as np
 import pytz
 
 import time
-import seaborn as sb
+#import seaborn as sb
 from openpyxl import load_workbook
 import pandas as pd
 import fiona
@@ -219,8 +221,8 @@ def main():
         elevation_bins = calculateByElevation(mask, grib, xres, yres)
 
         #Send data for writing to Excel File
-        if deltaDay == 0:
-            excel_output(elevation_bins)
+        #if deltaDay == 0:
+            #excel_output(elevation_bins)
 
         if inputArgs.plot == True:
             makePlot(elevation_bins, deltaDay)
@@ -239,7 +241,9 @@ def main():
             m = Basemap(llcrnrlon=-122.8, llcrnrlat=37.3,
                         urcrnrlon=-119.0, urcrnrlat=40.3, ax=ax)
 
-            m.arcgisimage(service='World_Imagery', xpixels=2000, verbose=True)
+            #m.arcgisimage(service='World_Imagery', xpixels=2000, verbose=True)
+            im = Image.open(urllib.request.urlopen('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-7035.921724206509,2137.1325758379703,-6818.197762056797,2309.0199143772174&bboxSR=4326&imageSR=4326&size=2000,1578&dpi=96&format=png32&transparent=true&f=image'))
+            m.imshow(im, origin='upper')
             #m.arcgisimage(service='World_Shaded_Relief', xpixels=2000, verbose=True)
 
             #For inset
@@ -258,7 +262,10 @@ def main():
             m2 = Basemap(llcrnrlon=-120.7, llcrnrlat=38.7,
                          urcrnrlon=-120.1, urcrnrlat=39.3, ax=axin)
 
-            m2.arcgisimage(service='World_Imagery', xpixels=2000, verbose=True)
+            im2 = Image.open(urllib.request.urlopen("http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-6915.600587229036,2217.346667156286,-6881.223119521186,2251.724134864135&bboxSR=4326&imageSR=4326&size=2000,1999&dpi=96&format=png32&transparent=true&f=image"))
+            m2.imshow(im2, origin='upper')
+
+           # m2.arcgisimage(service='World_Imagery', xpixels=2000, verbose=True)
             mark_inset(ax, axin, loc1=2, loc2=4, fc="none", ec="0.5")
 
             ###################################DEBUGGING AREA###############################################################
@@ -320,7 +327,10 @@ def get_snowdas(gribObj,date):
         if file.endswith(extension):
             gribObj.gribAll = gdal.Open(os.path.join(snowdas_dir,file), GA_ReadOnly)
             #<--Extract Date Info-->
-            f = open(snowdas_dir + './' + file, 'r')
+            if platform.system() == "Windows":
+                f = open(snowdas_dir + './' + file, 'r')
+            else:
+                f = open(os.path.join(snowdas_dir,file), 'r')
             ' The .txt file contains a bunch of dates, the dates labeled "Start ___" is the valid time stamp for the file'
             year_str = 'Start year'
             month_str = 'Start month'
@@ -335,7 +345,7 @@ def get_snowdas(gribObj,date):
             #<--Done with Date Info-->
             f.close()
             #Check to see if we are comparing two dates, if we are and this is the second date, grib.date will have a value
-            if gribObj.date != None:
+            if gribObj.date.size > 0:
                 gribObj.date2 = datetime.datetime(year=int(fyear), month=int(fmonth),day=int(fday))  # This will be the date in yyyymmdd format
             else:
                 gribObj.date =  datetime.datetime(year=int(fyear), month=int(fmonth),day=int(fday))  # This will be the date in yyyymmdd format
@@ -348,7 +358,7 @@ def get_snowdas(gribObj,date):
     # grid cell, we can calculate any type of Volume calculation we need, like 100 mm of rainfall over a 1,000 x 1,000 m
     # grid will give us ~8 acre feet.
     #Clip the raster to a given bounding box (makes the raster much easier to work with)
-    gribObj.gribAll = gdal.Translate('/vsimem/temp.dat', gribObj.gribAll, projWin=gribObj.bbox)
+    gribObj.gribAll = gdal.Translate('/vsimem/temp.vrt', gribObj.gribAll, projWin=gribObj.bbox)
     projInfo = grib.gribAll.GetProjection()
     try:
         spatialRef = osr.SpatialReference(wkt=projInfo)
@@ -357,7 +367,7 @@ def get_snowdas(gribObj,date):
         print ("NO COORDINATE SYSTEM FOUND! Transforming to XY")
         cord_sys = '4326'
     if cord_sys != '3875':
-        gribObj.gribAll = gdal.Warp('/vsimem/temp.dat', gribObj.gribAll,dstSRS='EPSG:3857')  # If you wanted to put it into x/y coords
+        gribObj.gribAll = gdal.Warp('/vsimem/temp.vrt', gribObj.gribAll,dstSRS='EPSG:3857')  # If you wanted to put it into x/y coords
         print("Successfully Reprojected Coordinate System From Lat/Lng to X/Y")
     band = gribObj.gribAll.GetRasterBand(1)
     data = BandReadAsArray(band)
@@ -381,8 +391,8 @@ def createMask(xxC,yyC,spatialRefProj):
     pyproj.Proj(init='EPSG:4326'),
     pyproj.Proj(
         proj='aea',
-        lat1=poly.bounds[1],
-        lat2=poly.bounds[3])),
+        lat_1=poly.bounds[1],
+        lat_2=poly.bounds[3])),
     poly).area
     # NOTE: Calculating area in the mercator projection (ESPG:3587) will lead to large errors due to inaccuracies in
     # that projections distance measurements. Instead, you must convert over to 4326 or equal area coordinates (whci is best)
@@ -436,7 +446,7 @@ def calculateBasin(mask, gribObj, xres, yres):
 
 def calculateByElevation(mask, gribObj, xres, yres):
    #If elevation data is empty, fill it up (this obviously won't change, so just do it once)
-    if not gribObj.elevation_data:
+    if gribObj.elevation_data.size == 0:
         elevationRaster() #Create the elevation raster and store data in grib.elevation_data
     elevationRange = np.arange(0,10000,500) #np.arrange(start,stop,step)
     df = pd.DataFrame(columns=['ElevRange','TotalAF','AveSWE'])
@@ -492,7 +502,7 @@ def elevationRaster():
     height = match_ds.RasterYSize
 
     # Create a blank destination file that matches our grib raster. Putting in a temp directory:
-    dst = gdal.GetDriverByName('GTiff').Create('/vsimem/temp.dat', width, height, 1, gdalconst.GDT_Float32)
+    dst = gdal.GetDriverByName('GTiff').Create('/vsimem/temp.vrt', width, height, 1, gdalconst.GDT_Float32)
     dst.SetGeoTransform(match_geotrans)
     dst.SetProjection(match_proj)
 
@@ -641,7 +651,9 @@ def makePlot(elevation_bins,deltaDay):
     return
 
 def excel_output(df_elevations):
-    efile = os.path.join('G:/Energy Marketing/Weather','Daily_Output.xlsx')
+    efile = os.path.join(os.path.sep,'home','smotley','programs','data','Daily_Output.xlsx')
+    if platform.system() == "Windows":
+        efile = os.path.join('G:/Energy Marketing/Weather','Daily_Output.xlsx')
     book = load_workbook(efile)
     writer = pd.ExcelWriter(efile, engine='openpyxl')
     writer.book = book
