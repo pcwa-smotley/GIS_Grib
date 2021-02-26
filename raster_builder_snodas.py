@@ -345,7 +345,7 @@ def get_snowdas(gribObj,date):
             #<--Done with Date Info-->
             f.close()
             #Check to see if we are comparing two dates, if we are and this is the second date, grib.date will have a value
-            if gribObj.date.size > 0:
+            if gribObj.date != None:
                 gribObj.date2 = datetime.datetime(year=int(fyear), month=int(fmonth),day=int(fday))  # This will be the date in yyyymmdd format
             else:
                 gribObj.date =  datetime.datetime(year=int(fyear), month=int(fmonth),day=int(fday))  # This will be the date in yyyymmdd format
@@ -594,7 +594,8 @@ def makeMap(lons,lats,hr,m,m2,df,deltaDay):
         img = Image.open(output_dir+"/"+grib.date.strftime("%Y%m%d")+"_0_"+grib.basin+'.png')
         w, h = img.size
         draw = ImageDraw.Draw(img)
-        font = ImageFont.truetype("micross.ttf", 120) #Avail in C:\\Windows\Fonts
+        font = ImageFont.truetype(ImageFont.load_path(
+            os.path.join(os.path.realpath(__file__), 'images', 'fonts','micross.tff')), 120) #Avail in C:\\Windows\Fonts
         plus_sign=''
         if grib.basinTotal > 0:
             plus_sign = "+"
