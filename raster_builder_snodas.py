@@ -37,7 +37,7 @@ from functools import partial
 from PIL import Image, ImageFont, ImageDraw
 import datetime
 import platform
-import urllib
+from urllib.request import urlopen
 
 import os, sys
 import numpy as np
@@ -92,7 +92,7 @@ def handle_args(argv):
                         default=None)  # This will be today's date in yyyymmdd format)
 
     parser.add_argument('-b','--basin',
-                        dest='basin', default='Hell_Hole',
+                        dest='basin', default='French_Meadows',
                         required=False,
                         help='The basin to calculate Total SWE. Options inlude:\n'
                              'Hell_Hole, French_Meadows, or MFP')
@@ -242,9 +242,8 @@ def main():
                         urcrnrlon=-119.0, urcrnrlat=40.3, ax=ax)
 
             #m.arcgisimage(service='World_Imagery', xpixels=2000, verbose=True)
-            im = Image.open(urllib.request.urlopen('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-7035.921724206509,2137.1325758379703,-6818.197762056797,2309.0199143772174&bboxSR=4326&imageSR=4326&size=2000,1578&dpi=96&format=png32&transparent=true&f=image'))
+            im = Image.open(urlopen("http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-122.8,37.3,-119.0,40.3&bboxSR=4326&imageSR=4326&size=2000,1578&dpi=96&format=png32&transparent=true&f=image"))
             m.imshow(im, origin='upper')
-            #m.arcgisimage(service='World_Shaded_Relief', xpixels=2000, verbose=True)
 
             #For inset
             # loc =>'upper right': 1,
@@ -262,10 +261,10 @@ def main():
             m2 = Basemap(llcrnrlon=-120.7, llcrnrlat=38.7,
                          urcrnrlon=-120.1, urcrnrlat=39.3, ax=axin)
 
-            im2 = Image.open(urllib.request.urlopen("http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-6915.600587229036,2217.346667156286,-6881.223119521186,2251.724134864135&bboxSR=4326&imageSR=4326&size=2000,1999&dpi=96&format=png32&transparent=true&f=image"))
+            im2 = Image.open(urlopen("http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-120.7,38.7,-120.09999999999998,39.3&bboxSR=4326&imageSR=4326&size=2000,1999&dpi=96&format=png32&transparent=true&f=image"))
             m2.imshow(im2, origin='upper')
 
-           # m2.arcgisimage(service='World_Imagery', xpixels=2000, verbose=True)
+            #m2.arcgisimage(service='World_Imagery', xpixels=2000, verbose=True)
             mark_inset(ax, axin, loc1=2, loc2=4, fc="none", ec="0.5")
 
             ###################################DEBUGGING AREA###############################################################
@@ -594,8 +593,11 @@ def makeMap(lons,lats,hr,m,m2,df,deltaDay):
         img = Image.open(output_dir+"/"+grib.date.strftime("%Y%m%d")+"_0_"+grib.basin+'.png')
         w, h = img.size
         draw = ImageDraw.Draw(img)
-        font_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'images', 'fonts', 'micross.ttf')
-        font = ImageFont.truetype(font_path, 120)  # Avail in C:\\Windows\Fonts
+        if platform.system() == 'Windows':
+            font = ImageFont.truetype('micross.ttf')
+        else:
+            font_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'images', 'fonts', 'micross.ttf')
+            font = ImageFont.truetype(font_path, 120)  # Avail in C:\\Windows\Fonts
 
         plus_sign=''
         if grib.basinTotal > 0:

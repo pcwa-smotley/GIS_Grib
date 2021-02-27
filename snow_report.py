@@ -3,10 +3,13 @@ import time
 import datetime
 import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
+import platform
 
 def main(basin, date, comparison_days):
     try:
-        file = os.path.join('G:/Energy Marketing/Weather', 'Daily_Output.xlsx')
+        file = os.path.join(os.path.sep, 'home','smotley','programs','data','Daily_Output.xlsx')
+        if platform.system() == "Windows":
+            file = os.path.join('G:/Energy Marketing/Weather', 'Daily_Output.xlsx')
         df1 = pd.read_excel(file, sheet_name='French_Meadows')
         df1.set_index(pd.DatetimeIndex(df1.Date), inplace=True)
         yesterday = (datetime.datetime.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
@@ -74,7 +77,11 @@ def main(basin, date, comparison_days):
         x_offset = widths[0]
 
         draw = ImageDraw.Draw(new_im)  # This is for text
-        font = ImageFont.truetype("micross.ttf", 244)  # Avail in C:\\Windows\Fonts
+        if platform.system()=="Windows":
+            font = ImageFont.truetype("micross.ttf", 244)  # Avail in C:\\Windows\Fonts
+        else:
+            font_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'images', 'fonts', 'micross.ttf')
+            font = ImageFont.truetype(font_path, 120)  # Avail in C:\\Windows\Fonts
         plus_sign = ''
         if combined_change > 0:
             plus_sign = "+"
@@ -92,7 +99,11 @@ def main(basin, date, comparison_days):
         draw.text(((widths[0]-wt)/2, 0), tot_text,(0, 0, 0), font=font)
         draw.text(((widths[0]-wd)/2, hsize ), delta_text,(0, 0, 0), font=font)
     new_im = new_im.resize((int(total_width/10),int(max_height/10)), Image.ANTIALIAS)
-    new_im.save(os.path.join('G:/Energy Marketing/Weather', ofile))
+    if platform.system() == 'Windows':
+        new_im.save(os.path.join('G:/Energy Marketing/Weather', ofile))
+    else:
+        new_im.save(os.path.join(os.path.sep,'home','smotley','images','weather_email', ofile))
+    print("IMAGES COMBINED AND SAVED")
     #change_im.save('Change.jpg')
 
     #x_offset = 0
