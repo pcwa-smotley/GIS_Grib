@@ -221,8 +221,8 @@ def main():
         elevation_bins = calculateByElevation(mask, grib, xres, yres)
 
         #Send data for writing to Excel File
-        #if deltaDay == 0:
-            #excel_output(elevation_bins)
+        if deltaDay == 0:
+            excel_output(elevation_bins)
 
         if inputArgs.plot == True:
             makePlot(elevation_bins, deltaDay)
