@@ -594,8 +594,9 @@ def makeMap(lons,lats,hr,m,m2,df,deltaDay):
         img = Image.open(output_dir+"/"+grib.date.strftime("%Y%m%d")+"_0_"+grib.basin+'.png')
         w, h = img.size
         draw = ImageDraw.Draw(img)
-        font = ImageFont.truetype(ImageFont.load_path(
-            os.path.join(os.path.realpath(__file__), 'images', 'fonts','micross.tff')), 120) #Avail in C:\\Windows\Fonts
+        font_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'images', 'fonts', 'micross.ttf')
+        font = ImageFont.truetype(font_path, 120)  # Avail in C:\\Windows\Fonts
+
         plus_sign=''
         if grib.basinTotal > 0:
             plus_sign = "+"
