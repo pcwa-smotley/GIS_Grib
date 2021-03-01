@@ -81,7 +81,7 @@ def main(basin, date, comparison_days):
             font = ImageFont.truetype("micross.ttf", 244)  # Avail in C:\\Windows\Fonts
         else:
             font_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'images', 'fonts', 'micross.ttf')
-            font = ImageFont.truetype(font_path, 120)  # Avail in C:\\Windows\Fonts
+            font = ImageFont.truetype(font_path, 244)  # Avail in C:\\Windows\Fonts
         plus_sign = ''
         if combined_change > 0:
             plus_sign = "+"
