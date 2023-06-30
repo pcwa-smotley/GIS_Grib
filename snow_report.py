@@ -102,7 +102,7 @@ def main(basin, date, comparison_days):
     if platform.system() == 'Windows':
         new_im.save(os.path.join('G:/Energy Marketing/Weather', ofile))
     else:
-        new_im.save(os.path.join(os.path.sep,'home','smotley','images','weather_email', ofile))
+        new_im.save(os.path.join(os.path.sep,'home','smotley','images','weather_email','SWE_images', ofile))
     print("IMAGES COMBINED AND SAVED")
     #change_im.save('Change.jpg')
 

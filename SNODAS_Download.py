@@ -43,10 +43,12 @@ def main(model, analysis_date):
     dt = dateutil.parser.parse(str(dt), fuzzy=True)
     # Note: unmasked products (beyond CONUS) are only available from 2010-present
     if dt >= datetime(2003, 9, 30) and dt < datetime(2010, 1, 1):
-        snodas_url_str = 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02158/masked/%Y/%m_%b/SNODAS_%Y%m%d.tar'
+        #snodas_url_str = 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02158/masked/%Y/%m_%b/SNODAS_%Y%m%d.tar'
+        snodas_url_str = 'https://noaadata.apps.nsidc.org/NOAA/G02158/masked/%Y/%m_%b/SNODAS_unmasked_%Y%m%d.tar'
         tar_subfn_str_fmt = 'us_ssmv1%itS__T0001TTNATS%%Y%%m%%d05HP001.%s.gz'
     elif dt >= datetime(2010, 1, 1):
-        snodas_url_str = 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02158/unmasked/%Y/%m_%b/SNODAS_unmasked_%Y%m%d.tar'
+        #snodas_url_str = 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02158/unmasked/%Y/%m_%b/SNODAS_unmasked_%Y%m%d.tar'
+        snodas_url_str = 'https://noaadata.apps.nsidc.org/NOAA/G02158/masked/%Y/%m_%b/SNODAS_unmasked_%Y%m%d.tar'
         tar_subfn_str_fmt = 'zz_ssmv1%itS__T0001TTNATS%%Y%%m%%d05HP001.%s.gz'
     else:
         print("No SNODAS data available for input date")
