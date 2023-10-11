@@ -582,10 +582,10 @@ def makeMap(lons,lats,hr,m,m2,df,deltaDay):
                      'Hell_Hole_SMUD' + '_EPSG4326', linewidth=1)
 
     # annotate
-    m.drawcountries()
+    #m.drawcountries()
     m.drawstates()
     #m.drawrivers()
-    m.drawcounties(color='darkred')
+    #m.drawcounties(color='darkred')
     if inputArgs.date2 != None:
         plt.suptitle(grib.basin.replace('_', " ") + ' Difference in SWE between ' + grib.date.strftime("%m/%d/%Y") +
         ' and ' + grib.date2.strftime("%m/%d/%Y") +
