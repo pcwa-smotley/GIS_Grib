@@ -10,13 +10,13 @@ def main(basin, date, comparison_days):
         file = os.path.join(os.path.sep, 'home','smotley','programs','data','Daily_Output.xlsx')
         if platform.system() == "Windows":
             file = os.path.join('G:/Energy Marketing/Weather', 'Daily_Output.xlsx')
-        df1 = pd.read_excel(file, sheet_name='French_Meadows')
+        df1 = pd.read_excel(file, sheet_name='French_Meadows', engine='openpyxl')
         df1.set_index(pd.DatetimeIndex(df1.Date), inplace=True)
         yesterday = (datetime.datetime.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
         row_today_FM = df1.loc[yesterday]
         row_lastWeek_FM = df1.loc[(datetime.datetime.today() - datetime.timedelta(days=7)).strftime('%Y-%m-%d')]
 
-        df2 = pd.read_excel(file, sheet_name='Hell_Hole')
+        df2 = pd.read_excel(file, sheet_name='Hell_Hole', engine='openpyxl')
         df2.set_index(pd.DatetimeIndex(df2.Date), inplace=True)
 
         row_today_HH = df2.loc[yesterday]

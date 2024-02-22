@@ -26,7 +26,7 @@ def main(model, analysis_date):
     ############################USER ADJUSTABLE VARIABLES#################################
     if analysis_date == None:
         #analysis_date = time.strftime("%Y%m%d")  # This will be today's date in yyyymmdd format
-        analysis_date = '20190106'
+        analysis_date = '20240221'
     code = 1034  # 1034 is SWE, 1036 is snow depth
     if model == None:
         model = 'SNODAS'
